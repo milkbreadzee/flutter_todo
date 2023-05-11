@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "595520348405",
+    "project_id": "todo-bunny-cbb81",
+    "storage_bucket": "todo-bunny-cbb81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595520348405:android:2ccc76a645f8d0227665bc",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595520348405-jas0e3ecdvhr81t5kdm9oapa48lpjvu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_application_1",
+            "certificate_hash": "03c34ceb20e66fd4102c7a754e8d5c052d0ea1e2"
+          }
+        },
+        {
+          "client_id": "595520348405-qt78q24m3vo0q8cp7a3svlr3smm1iabk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHULCfwys8EK4URtUctCyvQMNh5itLgbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595520348405-qt78q24m3vo0q8cp7a3svlr3smm1iabk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
