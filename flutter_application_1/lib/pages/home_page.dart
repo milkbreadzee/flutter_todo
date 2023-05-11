@@ -21,37 +21,32 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-          elevation: 0,
-          leading: new Image.asset("lib/assets/bunny.png"),
-          backgroundColor: Color(0xfff594b5),
-        ),
+            elevation: 0,
+            leading: new Image.asset("lib/assets/bunny.png"),
+            backgroundColor: Color(0xfff594b5),
+            actions: <Widget>[
+              IconButton(
+                  onPressed: () {
+                    FirebaseAuth.instance.signOut().then((value) {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => LoginPage()));
+                    });
+                  },
+                  icon: Image.asset("lib/assets/flipped-bunny.png"))
+            ]),
         body: ListView(children: [
-          const SizedBox(height: 25,),
+          const SizedBox(
+            height: 25,
+          ),
           TodoTile(
             taskName: "do work",
             taskCompleted: false,
-            onChanged:(p0) => {},
+            onChanged: (p0) => {},
           ),
         ]),
       ),
     );
 
-    // appBar: AppBar(
-    //   elevation: 0,
-    //   leading: new Image.asset("lib/assets/bunny.png"),
-    //   backgroundColor: Color(0xfff594b5),
-
-    // ),
-    // body: Center(
-    //   child: ElevatedButton(
-    //     child: Text("LogOut"),
-    //     onPressed: () {
-    //       FirebaseAuth.instance.signOut().then((value) {
-    //         Navigator.push(context,
-    //             MaterialPageRoute(builder: (context) => LoginPage()));
-    //       });
-    //     },
-    //   ),
-    // ),
+  
   }
 }
